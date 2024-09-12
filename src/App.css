@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #282e34;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #21222a;
+  padding: 30px 25px;
+  height: 90px;
 }
 
-.App-link {
+.nav-logo-text {
   color: #61dafb;
+  margin-right: auto;
+  font-size: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-icon {
+  height: 30px;
+  margin: 7px;
+}
+
+.nav-title {
+  color: #deebf8;
+  font-weight: 600;
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+  position: relative;
+}
+
+.main-title {
+  letter-spacing: -0.05em;
+  font-size: 39px;
+}
+
+.main-list {
+  margin-left: 30px;
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main-list li {
+  line-height: 19px;
+  padding: 10px;
+}
+
+.main-list li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
+}
+
+.main-bg-logo {
+  opacity: 11%;
+  top: 20%;
+  height: 350px;
+  right: 0;
+  filter: saturate(0);
+  transform: translateX(50%);
+  position: absolute;
 }
